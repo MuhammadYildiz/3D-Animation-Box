@@ -24,28 +24,28 @@ body{
     
 }
 .front.side{
-    background-color: rgba(132, 2, 2, 0.4);
+    background-color: rgba(75, 0, 0, 0.4);
     transform: translateZ(250px);
 }
 .back.side{
     transform: translateZ(-250px)  ;
-    background-color: rgba(13, 129, 5, 0.4);
+    background-color: rgba(17, 255, 0, 0.4);
 }
 .right.side{
     transform: translateX(250px) rotateY(90deg);
-    background-color: rgba(226, 7, 175, 0.4);
+    background-color: rgba(253, 3, 195, 0.4);
 }
 .left.side{
     transform: translateX(-250px) rotateY(-90deg);
-    background-color: rgba(200, 167, 6, 0.4);
+    background-color: rgba(255, 213, 0, 0.4);
 }
 .top.side{
     transform: translateY(-250px) rotateX(90deg);
-    background-color: rgba(2, 210, 182, 0.4);
+    background-color: rgba(0, 85, 74, 0.4);
 }
 .button.side{
     transform: translateY(250px) rotateX(-90deg);
-    background-color: rgba(3, 10, 109, 0.4);
+    background-color: rgba(0, 14, 208, 0.4);
 }
 @keyframes rotate-box {
     0% {transform: rotateX(45deg) rotateY(45deg);}
