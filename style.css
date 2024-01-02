@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    transform-style: preserve-3d;
+    position: relative;
+    transform: translateZ(-50px) rotateX(-30deg) rotateY(-30deg);
+    animation:rotate-box 20s infinite linear ;
+    width: 500px;
+    height: 500px;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    color: black;
+    font-size: 50px;  
+    
+}
+.front.side{
+    background-color: rgba(132, 2, 2, 0.4);
+    transform: translateZ(250px);
+}
+.back.side{
+    transform: translateZ(-250px)  ;
+    background-color: rgba(13, 129, 5, 0.4);
+}
+.right.side{
+    transform: translateX(250px) rotateY(90deg);
+    background-color: rgba(226, 7, 175, 0.4);
+}
+.left.side{
+    transform: translateX(-250px) rotateY(-90deg);
+    background-color: rgba(200, 167, 6, 0.4);
+}
+.top.side{
+    transform: translateY(-250px) rotateX(90deg);
+    background-color: rgba(2, 210, 182, 0.4);
+}
+.button.side{
+    transform: translateY(250px) rotateX(-90deg);
+    background-color: rgba(3, 10, 109, 0.4);
+}
+@keyframes rotate-box {
+    0% {transform: rotateX(45deg) rotateY(45deg);}
+    25% {transform: rotateX(-45deg) rotateY(45deg);}
+    50% {transform: rotateX(-45deg) rotateZ(-45deg);}
+    75% {transform: rotateX(45deg) rotateY(-45deg);}
+    100% {transform: rotateX(45deg) rotateY(45deg);}
+}
+
